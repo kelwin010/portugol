@@ -1,19 +1,23 @@
-programa 
-{
+programa {
   funcao inicio() 
   {
-    real a, b, soma, sub, mult, div
-    escreva("Digite o primeiro número:")
-    leia(a)
+    const inteiro MAIOREDADE = 18
+    inteiro idade, anos
 
-    escreva("Digite o segundo número:")
-    leia(b)
+    escreva("Digite sua idade: ")
+    leia(idade)
 
-    soma = a + b // Soma os dois valores 
-    sub  = a - b // Subtrai os dois valores
-    mult = a * b // Multiplica os dois valores 
-    div  = a / b // Divide os dois valores 
+    anos = MAIOREDADE - idade
+se (anos > 0)
+(
+  escreva("Falta(m) ", anos, " ano(s) para você atingir a maioridade\n")
+)
+senao
+(
+  escreva("Você ja atingiu a maioridade\n")
+)
 
-    escreva("\nA soma dos números é igual a: ", soma)  
-    }
+
+
+  }
 }
